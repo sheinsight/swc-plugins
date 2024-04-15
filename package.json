@@ -11,5 +11,6 @@
         "prepublishOnly": "cargo build-wasi --release"
     },
     "files": [],
+    "packageManager": "pnpm@8.15.3",
     "preferUnplugged": true
 }

@@ -1,6 +1,6 @@
 {
     "name": "@shined/swc-plugin",
-    "version": "0.0.1-0",
+    "version": "0.0.1-1",
     "description": "",
     "author": "",
     "license": "ISC",
@@ -13,7 +13,7 @@
     "publishConfig": {
         "access": "public"
     },
-    "files": [],
+    "files": ["shined_swc_plugin.wasm"],
     "packageManager": "pnpm@8.15.3",
     "preferUnplugged": true
 }

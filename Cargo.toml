@@ -1,0 +1,26 @@
+[package]
+name = "shined_swc_plugin"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+strip = "symbols"
+opt-level = "s"
+codegen-units = 1
+
+[dependencies]
+serde = "1"
+serde_json = "1.0.114"
+swc_core = { version = "0.90.30", features = ["ecma_plugin_transform","__parser"] }
+auto_css_modules = { path = "./transform" }
+
+
+[workspace]
+members = [
+    "transform",
+]
+resolver = "2"

@@ -1,3 +1,2 @@
-/target
-^target/
 target
+shined_swc_plugin.wasm
